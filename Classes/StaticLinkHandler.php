@@ -54,7 +54,7 @@ class StaticLinkHandler extends AbstractLinkHandler {
 	 * @return string
 	 */
 	public function render(ServerRequestInterface $request) {
-		GeneralUtility::makeInstance(PageRenderer::class)->loadRequireJsModule('TYPO3/CMS/VierwdLinkHandler/StaticLinkHandler');
+		GeneralUtility::makeInstance(PageRenderer::class)->loadRequireJsModule('TYPO3/CMS/VierwdLinkhandler/StaticLinkHandler');
 
 		$links = '<div class="element-browser-panel element-browser-main">';
 		$links .= '<div class="element-browser-main-content">';
