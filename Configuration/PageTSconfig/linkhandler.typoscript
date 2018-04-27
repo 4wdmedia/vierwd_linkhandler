@@ -1,0 +1,7 @@
+TCEMAIN.linkHandler.phone {
+	handler = Vierwd\VierwdLinkHandler\PhoneLinkHandler
+	label = Telefonnummer
+	scanAfter = page
+	scanBefore = url
+	displayAfter = mail
+}

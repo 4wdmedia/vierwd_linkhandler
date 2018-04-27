@@ -1,0 +1,46 @@
+{
+	"name": "vierwd/typo3-linkhandler",
+	"description": "Static and Phone linkhandlers for TYPO3",
+	"type": "typo3-cms-extension",
+	"license": "MIT",
+	"keywords": [
+		"TYPO3",
+		"extension"
+	],
+	"support": {
+		"issues": "https://github.com/4wdmedia/vierwd_linkhandler/issues"
+	},
+	"authors": [{
+		"name": "FORWARD MEDIA",
+		"email": "kontakt@4wdmedia.de",
+		"homepage": "https://www.4wdmedia.de",
+		"role": "Developer"
+	}],
+	"require": {
+		"php": ">=7.0.0",
+		"typo3/cms-core": "^8.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Vierwd\\VierwdLinkHandler\\": "Classes"
+		}
+	},
+	 "autoload-dev": {
+		"psr-4": {
+			"Vierwd\\VierwdLinkHandler\\Tests\\": "Tests"
+		}
+	},
+	"replace": {
+		"vierwd_linkhandler": "self.version",
+		"vierwd/vierwd_linkhandler": "self.version"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		},
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": ".Build/Web"
+		}
+	}
+}
