@@ -26,7 +26,7 @@ abstract class AbstractLinkHandler extends BaseLinkHandler implements LinkHandle
 		$this->view->setLayoutRootPaths([GeneralUtility::getFileAbsFileName('EXT:vierwd_linkhandler/Resources/Private/Layouts/LinkBrowser')]);
 	}
 
-	public function getBodyTagAttributes(): array {
+	public function getBodyTagAttributes() {
 		return [];
 	}
 }
