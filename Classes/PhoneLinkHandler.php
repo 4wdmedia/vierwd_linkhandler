@@ -64,6 +64,11 @@ class PhoneLinkHandler extends AbstractLinkHandler {
 		GeneralUtility::makeInstance(PageRenderer::class)->loadRequireJsModule('TYPO3/CMS/VierwdLinkhandler/PhoneLinkHandler');
 
 		$this->view->assign('phonenumber', !empty($this->linkParts) ? $this->linkParts['phone'] : '');
+		if (TYPO3_version >= '9.0.0') {
+			$this->view->assign('label', 'LLL:EXT:recordlist/Resources/Private/Language/locallang_browse_links.xlf:setLink');
+		} else {
+			$this->view->assign('label', 'LLL:EXT:lang/Resources/Private/Language/locallang_browse_links.xlf:setLink');
+		}
 		return $this->view->render('Phone');
 	}
 }
