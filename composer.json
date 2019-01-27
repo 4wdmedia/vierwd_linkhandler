@@ -20,6 +20,11 @@
 		"php": ">=7.0.0",
 		"typo3/cms-core": "^8.0 || ^9.3"
 	},
+	"require-dev": {
+		"friendsofphp/php-cs-fixer": "^2.12.0",
+		"vierwd/coding-standard": "^1.0",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.4.4"
+	},
 	"autoload": {
 		"psr-4": {
 			"Vierwd\\VierwdLinkHandler\\": "Classes"
@@ -33,6 +38,10 @@
 	"replace": {
 		"vierwd_linkhandler": "self.version",
 		"vierwd/vierwd_linkhandler": "self.version"
+	},
+	"config": {
+		"vendor-dir": ".Build/vendor",
+		"bin-dir": ".Build/bin"
 	},
 	"extra": {
 		"branch-alias": {
