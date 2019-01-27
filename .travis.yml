@@ -21,8 +21,6 @@ install:
   - composer install
 
 script:
-  - vendor/bin/phpunit
-
   - >
     echo "Running php lint";
     find Classes -name \*.php | xargs grep --files-without-match --regexp '<\?php // PHP\s*7\.[3-9]' | xargs -I % php -d display_errors=stderr -l % > /dev/null ;
